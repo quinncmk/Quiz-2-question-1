@@ -92,7 +92,7 @@ public class CalculateMonthlyPaymentAndTotalPay {
 		// To get the monthly percentage rate of student loan.
 		double monthlyPercentageRateOfLoan = this.APROfStudentLoan / 12;		
 		
-		// Use a for loop to get the total tuition for user to complete 4 year college.
+		// Use a for loop to get the total amount of loan for user to complete 4 year college.
 		for (int i = 0; i < 3; i++){
 			this.initialTuition += initialTuition * this.percentageIncreaseTuition;
 		}		
@@ -107,6 +107,7 @@ public class CalculateMonthlyPaymentAndTotalPay {
 	// This method is to get the total tuition for the user to complete 4 years college.
 	public double calculateTotalTuition() {
 	
+		//// Use a for loop to get the total tuition for user to complete 4 year college.
 		double totalTuition = this.monthlyPayment * this.monthOfRepayment;
 		return totalTuition;
 	}
